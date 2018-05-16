@@ -21,5 +21,6 @@ const filterForNP = () => {
     }
 };
 
+
 npBtn.addEventListener("click", filterForNP);
 
