@@ -6,7 +6,7 @@ body {
     background-attachment: fixed; 
     position: absolute;
     top:0;
-    padding: 3% 10% 7% 10%; 
+    padding: 3% 6% 7% 6%; 
 }
 .imageContainer{
     display: flex;
