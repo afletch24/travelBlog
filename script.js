@@ -1,5 +1,6 @@
 let imgBlockArray = document.getElementsByClassName("imgBlock");
 const npBtn = document.getElementById("park");
+const allBtn = document.getElementById("all");
 
 
 Array.from(imgBlockArray).forEach(block => {
@@ -20,7 +21,20 @@ const filterForNP = () => {
         }
     }
 };
+const unfilterForAll = () => {
+    for(i=0; i<imgBlockArray.length; i++){
+        let block = imgBlockArray[i];
+        let blockVal = imgBlockArray[i].getAttribute("value");
+        
+        if(blockVal === "np"){
+        }else{
+            block.classList.remove("hide");
+        }
+    }
+}
 
 
 npBtn.addEventListener("click", filterForNP);
+allBtn.addEventListener("click", unfilterForAll);
+
 

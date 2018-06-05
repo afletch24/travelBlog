@@ -101,3 +101,13 @@ a{
 .hide{
     display: none;
 }
+#all:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    color: black;
+}
+#park:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+    
+}
